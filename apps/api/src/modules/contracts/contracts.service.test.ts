@@ -15,7 +15,7 @@ vi.mock('./contracts.store', () => ({
 }));
 
 import type { ContractProgressEvent } from '@app/core';
-import { getJob } from '../jobs/jobs.store';
+import { getJob } from '../../platform/jobs/store';
 import { analyseText } from './contracts.ai-service';
 import { extractText } from './contracts.extractor-service';
 import {

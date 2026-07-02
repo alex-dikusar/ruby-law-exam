@@ -1,6 +1,11 @@
 import { v4 as uuidv4 } from 'uuid';
 import type { ContractAnalysis, ContractProgressEvent } from '@app/core';
-import { createJob, deleteJob, emitEvent, type Job } from '../jobs/jobs.store';
+import {
+  createJob,
+  deleteJob,
+  emitEvent,
+  type Job,
+} from '../../platform/jobs/store';
 import { analyseText } from './contracts.ai-service';
 import { extractText } from './contracts.extractor-service';
 import { findContractById, saveContract } from './contracts.store';

@@ -1,5 +1,5 @@
-import type { SseStream } from '../../platform/http/sse';
-import type { Job } from './jobs.store';
+import type { SseStream } from '../http/sse';
+import type { Job } from './store';
 
 export function streamJob<T>(
   job: Job<T>,

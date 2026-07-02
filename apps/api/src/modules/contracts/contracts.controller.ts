@@ -3,11 +3,11 @@ import {
   type ContractProgressEvent,
 } from '@app/core';
 import type { Request, Response } from 'express';
-import { streamJob } from '../jobs/jobs.sse';
-import { getJob } from '../jobs/jobs.store';
 import { ApiError } from '../../platform/http/api-error';
 import { openSseStream } from '../../platform/http/sse';
 import { sendFile } from '../../platform/http/send-file';
+import { streamJob } from '../../platform/jobs/job-stream';
+import { getJob } from '../../platform/jobs/store';
 import {
   generateReportName,
   generateReportPdf,
